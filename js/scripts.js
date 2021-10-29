@@ -12,7 +12,13 @@ jQuery("img").click(function() {
 
 $(document).ready(function() {
   $(".clickable").click(function() {
-    $("#walrus-showing").toggle();
-    $("#walrus-hidden").toggle();
+    $("#walrus-showing").fadeToggle();
+    $("#walrus-hidden").slideToggle();
+  });
+});
+
+$(document).ready(function() {
+  $("button#DM").click(function() {
+  $("body").toggleClass("DM");
   });
 });
